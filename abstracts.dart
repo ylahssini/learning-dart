@@ -54,5 +54,28 @@ void main() {
   print('My Rectangle: ${myRectangle.result}');
   print('My Square: ${mySquare.result}');
 
-  Shape randomShap;
+  print('########################################################');
+
+  Shape randomShape;
+  Random random = Random();
+  int randomNumber = random.nextInt(3);
+
+  switch (randomNumber) {
+    case 0:
+      randomShape = Circle(random.nextInt(200) + 1.0);
+      break;
+
+    case 1:
+      randomShape = Rectangle(random.nextInt(200) + 1.0, random.nextInt(200) + 1.0);
+      break;
+
+    case 2:
+      randomShape = Square(random.nextInt(200) + 1.0);
+      break;
+
+    default:
+      print('There is no such case n° $randomNumber');
+  }
+
+  print(randomShape.result);
 }

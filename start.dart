@@ -23,4 +23,7 @@ void main() {
 
 	var resultSub = choose(false);
 	print('Result of sub: ${resultSub(30, 20)}');
+
+  var obj = { 'a': 1 };
+  print(obj['a']);
 }
