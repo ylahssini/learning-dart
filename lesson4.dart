@@ -1,13 +1,17 @@
 class Complex {
-  num _real; // the _ represent that property of class is private
+  // the _ represent that property of class is private
+  num _real;
   num _imaginary;
 
-  Complex(this._real, this._imaginary); // this is constructor of class
+  // this is constructor of class
+  Complex(this._real, this._imaginary);
   Complex.real(num real) : this(real, 0);
   Complex.imaginary(num imaginary) : this(0, imaginary);
 
-  get real => _real; // this is new syntax of get function to get value of private property
-  set real(num value) => _real = value; // this is new syntax of set function to set value of private property
+  // this is new syntax of get function to get value of private property
+  get real => _real;
+  // this is new syntax of set function to set value of private property
+  set real(num value) => _real = value;
 
   get imaginary => _imaginary;
   set imaginary(num value) => _imaginary = value;
