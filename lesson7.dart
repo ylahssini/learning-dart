@@ -44,4 +44,10 @@ void main() {
   print('----------------------------------------------------------------------');
   print('In list multiplied, get the max');
   print(multiplied.reduce(Math.max));
+
+
+  print('----------------------------------------------------------------------');
+  Map<int, int> mapNumbers = Map.fromIterable(numbers);
+  print('Convert our table to map and add key to value which are numbers and same');
+  print(mapNumbers.map((int key, int value) => MapEntry(key, key + value)));
 }
