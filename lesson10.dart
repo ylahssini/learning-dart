@@ -13,6 +13,6 @@ void main() {
   } on FormatException {
     print('Could not parse the input');
   } on RangeError {
-    print('The color doesn\'t exist');
+    print('Wrong answer');
   }
 }
